@@ -18,7 +18,7 @@ namespace Win.Panaderia
         CategoriasBL _categorias;
         TiposBL _tiposBL;
 
-        public object listaCategoriasBindingSource { get;  set; }
+  //      public object listaCategoriasBindingSource { get;  set; }
 
         public FormProductos()
         {
@@ -29,7 +29,7 @@ namespace Win.Panaderia
 
               _categorias = new CategoriasBL();
            
-            listaCategoriasBindingSource.DataSource = _categorias.ObtenerCategorias();
+           // listaCategoriasBindingSource.DataSource = _categorias.ObtenerCategorias();
                 
             _tiposBL = new TiposBL();
             listaProductosBindingSource.DataSource = _tiposBL.ObtenerTipos();

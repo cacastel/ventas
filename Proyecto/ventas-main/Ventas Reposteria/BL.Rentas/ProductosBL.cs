@@ -21,6 +21,7 @@ namespace BL.Rentas
 
         public BindingList<Producto> ObtenerProductos()
         {
+
             _contexto.Productos.Load();
             ListaProductos = _contexto.Productos.Local.ToBindingList();
 

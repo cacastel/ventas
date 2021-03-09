@@ -12,7 +12,9 @@ namespace BL.Rentas
     public class CategoriasBL
     {
         Contexto _contexto;
+
         public BindingList<Categoria> ListaCategorias { get; set; }
+
         public CategoriasBL()
         {
             _contexto = new Contexto();
