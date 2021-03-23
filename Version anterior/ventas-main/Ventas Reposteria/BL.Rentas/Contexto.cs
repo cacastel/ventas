@@ -18,12 +18,12 @@ namespace BL.Rentas
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            Database.SetInitializer(new DatosdeInicio()); // Agrega datos de inicio
+          //  Database.SetInitializer(new DatosdeInicio()); // Agrega datos de inicio
         }
 
         public DbSet<Producto> Productos { get; set; }
         public DbSet<Categoria> Categorias { get; set; }
         public DbSet<Tipo> Tipos { get; set; }
-        public object Usuarios { get; internal set; }
+
     }
 }

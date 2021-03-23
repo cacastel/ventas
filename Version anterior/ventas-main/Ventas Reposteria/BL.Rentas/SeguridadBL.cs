@@ -25,11 +25,4 @@ namespace BL.Rentas
             return false;
         }
     }
-
-
-    public class Usuario
-    {
-        public string nombre { get; set; }
-        public string contrasena { get; set; }
-    }
 }

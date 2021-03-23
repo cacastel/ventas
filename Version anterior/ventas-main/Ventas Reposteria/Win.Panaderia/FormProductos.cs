@@ -15,8 +15,7 @@ namespace Win.Panaderia
     public partial class FormProductos : Form
     {
         ProductosBL _productos;
-        CategoriasBL _categorias;
-        TiposBL _tiposBL;
+
 
         public FormProductos()
         {
@@ -24,11 +23,6 @@ namespace Win.Panaderia
 
             _productos = new ProductosBL();
             listaProductosBindingSource.DataSource = _productos.ObtenerProductos();
-
-          
-
-            _tiposBL = new TiposBL();
-            listaTiposBindingSource.DataSource = _tiposBL.ObtenerTipos();
         }
 
         private void productosBLDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
